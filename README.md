@@ -1,3 +1,6 @@
 # CART_QUANTITY
-- Simple version of adding Quantity in our Cart
-- 
+<p align="center">
+Simple version of adding Quantity in our Car
+</p>
+ <img src="/CartQuantityImg/CartQuantityScreenshot.png" alt="CartQuantityImage">
+ .[]
