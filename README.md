@@ -3,4 +3,5 @@
 Simple version of adding Quantity in our Car
 </p>
  <img src="/CartQuantityImg/CartQuantityScreenshot.png" alt="CartQuantityImage">
- .[]
+ 
+ - This's all about CartQuantity iteration/incrementation
