@@ -7,12 +7,16 @@
     <link rel="stylesheet" href="cartQuantity.css">
 </head>
 <body>
-    <h4>Cart Quantity</h4>
-    <button onclick=" console.log(`cartQuantity: ${cartQuantity}`); ">Show Quantity</button>
-    <button onclick=" cartQuantity ++; console.log(`cartQuantity: ${cartQuantity}`); ">Add to Cart</button>
-    <button onclick=" cartQuantity += 2; console.log(`cartQuantity: ${cartQuantity}`); ">+2</button>
-    <button onclick=" cartQuantity += 3; console.log(`cartQuantity: ${cartQuantity}`); ">+3</button>
-    <button onclick=" cartQuantity = 0; console.log('Cart was reset');console.log(`cartQuantity: ${cartQuantity}`);">Reset Cart</button>
+    <h2>Cart Quantity</h2>
+    <p id="cart-display">Cart: 0 items</p>
+    <p id="warning-message" class="warning"></p>
+    <div class="button-group">
+        <button onclick="showQuantity()">Show Quantity</button>
+        <button onclick="updateCart(1)">Add to Cart</button>
+        <button onclick="updateCart(2)">+2</button>
+        <button onclick="updateCart(3)">+3</button>
+        <button onclick="resetCart()">Reset Cart</button>
+    </div>
 <script src="cartQuantity.js"></script>
 </body>
 </html>
