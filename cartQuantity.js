@@ -1,9 +1,9 @@
 let cartQuantity = 0;
-const maxLimit = 10;
+const maxLimit = 100;
 
 function updateCart(amount) {
     if (cartQuantity + amount > maxLimit) {
-        document.querySelector('.warning-message').innerText = 'Cannot exceed 10 items in cart.';
+        document.querySelector('.warning-message').innerText = 'You Can\'t exceed 100 items in one Single cart Upgrade to Pro Cart.';
         return;
     };
     cartQuantity += amount;
@@ -13,7 +13,7 @@ function updateCart(amount) {
 
 function resetCart() {
     cartQuantity = 0;
-    document.querySelector('.warning-message').innerText = '';
+    document.querySelector('.warning-message').innerText = 'The Cart has been Reset';
     console.log('Cart was reset');
     updateDisplay();
 }
