@@ -3,19 +3,19 @@ const maxLimit = 10;
 
 function updateCart(amount) {
     if (cartQuantity + amount > maxLimit) {
-        document.getElementById('warning-message').textContent = 'Cannot exceed 10 items in cart.';
+        document.querySelector('.warning-message').innerText = 'Cannot exceed 10 items in cart.';
         return;
-    }
+    };
     cartQuantity += amount;
-    document.getElementById('warning-message').textContent = '';
+    document.querySelector('.warning-message').innerText = '';
     updateDisplay();
 }
 
 function resetCart() {
     cartQuantity = 0;
-    document.getElementById('warning-message').textContent = '';
-    updateDisplay();
+    document.querySelector('.warning-message').innerText = '';
     console.log('Cart was reset');
+    updateDisplay();
 }
 
 function showQuantity() {
@@ -24,5 +24,5 @@ function showQuantity() {
 }
 
 function updateDisplay() {
-    document.getElementById('cart-display').textContent = `Cart: ${cartQuantity} item${cartQuantity !== 1 ? 's' : ''}`;
+    document.querySelector('.cart-display').innerText = `Cart: ${cartQuantity} item${cartQuantity !== 1 ? 's' : ''}`;
 }

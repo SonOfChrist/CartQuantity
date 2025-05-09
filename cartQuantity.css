@@ -15,7 +15,7 @@ button {
     border-radius: 50px;
     cursor: pointer;
 }
-#cart-display {
+.cart-display {
     font-size: 18px;
     margin: 10px 0;
 }
