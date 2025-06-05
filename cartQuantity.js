@@ -14,7 +14,6 @@ function updateCart(amount) {
 function resetCart() {
     cartQuantity = 0;
     document.querySelector('.warning-message').innerText = 'The Cart has been Reset';
-    console.log('Cart was reset');
     updateDisplay();
 }
 
